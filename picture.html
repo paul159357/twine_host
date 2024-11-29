@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image with Text</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column; /* Stack image and text vertically */
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #ffffff; /* 배경색, 필요에 따라 수정 가능 */
+            font-family: Arial, sans-serif; /* 텍스트 폰트 설정 */
+        }
+        img {
+            max-width: 100%;
+            max-height: 70%; /* Prevent image from taking too much space */
+        }
+        .text {
+            margin-top: 20px; /* Spacing between image and text */
+            text-align: center; /* Center align text */
+            font-size: 18px; /* 기본 글자 크기 */
+            font-weight: normal; /* 기본 글자 굵기 */
+            color: #333333; /* 기본 글자 색상 */
+        }
+        /* Example classes for customization */
+        .large {
+            font-size: 24px;
+        }
+        .small {
+            font-size: 14px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .italic {
+            font-style: italic;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/picture.jpg" alt="Centered Image">
+    <div class="text large bold">
+        친구와 같이 찍은 사진이다. 그리운 마음에 가슴이 사무친다.<br>
+        눌러두었던 감정들이 울컥 올라오는 것 같다. 눈에 눈물이 고인다.
+    </div>
+    
+</body>
+</html>
